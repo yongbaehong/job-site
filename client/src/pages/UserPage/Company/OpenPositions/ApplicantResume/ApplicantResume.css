@@ -1,0 +1,32 @@
+.ApplicantResume-overlay {
+  visibility: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.5);
+  top: -550px;
+  z-index: -5000;
+  opacity: 0;
+  transition: all 200ms linear;
+}
+
+.ApplicantResume-show {
+  visibility: initial;
+  position: fixed!important;
+  top: 0!important;
+  left: 0!important;
+  opacity: 1!important;
+  z-index: 5000;
+}
+
+.ApplicantResume {
+  border-radius: 3px;
+  height: 85%;
+  background-color: white;
+  border: 1px solid #44b119;
+  padding: 1rem;
+  margin: 0 1rem;
+  margin-top: 48px;
+  overflow-y: auto;
+}
+

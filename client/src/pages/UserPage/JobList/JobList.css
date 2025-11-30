@@ -1,0 +1,138 @@
+.SingleCompany-default-header {
+  background-color: #bfe195;
+  color: #ffffff;
+  text-shadow: 1.5px 1px 1px #000000;
+}
+
+.SingleCompany-CustomJumbotron-1 > div > div {
+  color: #61d800;
+}
+
+.SingleCompanyMobile-h4,.SingleCompany-h4 {
+  color: var(--bs-danger);
+}
+
+.SingleCompany-default-text {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Minimum width */
+@media (max-width: 769px) {
+  .JobLists-Company {
+    padding-top: 30px;
+  }
+
+  .JobListItem {
+    width: 100%;
+    height: 90%;
+  }
+
+  .SingleCompany {
+    visibility: hidden;
+    background-color: white;
+    position: fixed;
+    top: -550px;
+    left: 0px;
+    opacity: 0;
+    z-index: -6000;
+    transition: all 300ms linear;
+    height: 90vh;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: 0 initial initial 0px;
+  }
+
+  .showSingleCompanyMobile {
+    visibility: initial;
+    background-color: white;
+    position: fixed !important;
+    top: 40px !important;
+    left: 0px !important;
+    opacity: 1 !important;
+    z-index: 6000 !important;
+    height: 90vh;
+    border-radius: 3px;
+    margin: 0px 4px;
+  }
+
+  #SingleCompanyMobileOverlay {
+    background-color: #00000099 !important;
+    visibility: initial;
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    opacity: 1 !important;
+    z-index: 7000 !important;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .SingleCompany-CustomJumbotron-1 > div > div {
+    font-size: 2.5rem;
+  }
+}
+
+/* Maximum Width */
+@media (min-width: 770px) {
+  .JobsList-heading {
+    padding-top: 0px;
+  }
+
+  .JobLists-Company {
+    padding-top: 40px;
+    height: 70vh;
+    display: flex;
+  }
+
+  .BookmarkJobs-Company {
+    height: 70vh;
+    display: flex;
+  }
+
+  .JobListItem {
+    width: 30vw;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .SingleCompany {
+    width: 70vw;
+    height: 95vh;
+    padding-left: 1.5rem;
+    overflow-y: auto;
+  }
+
+  .SingleCompany-default {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+
+  .SingleCompany-CustomJumbotron-1 > div > div {
+    font-size: 4rem;
+  }
+}
+
+.SingleCompany-jobTitle {
+  background-color: transparent;
+  color:white;
+  animation-duration: 1000ms;
+  animation-name: jobTitleAnime;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes jobTitleAnime {
+  from {
+    color: white;
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  to {
+    color: #ffc77d;
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

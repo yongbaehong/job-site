@@ -1,0 +1,9 @@
+.BookmarkJobItem {
+  transition: all 150ms;
+}
+
+.BookmarkJobItem:hover {
+  border-left: 3px solid#69b400;
+  background-color: #f0f8e5;
+}
+

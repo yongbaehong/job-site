@@ -1,0 +1,9 @@
+.Company-description::first-line {
+  font-size: 2rem;
+  color: seagreen;
+  opacity: 0.9;
+}
+
+.Company-h4 {
+  color: #79c40d;
+}

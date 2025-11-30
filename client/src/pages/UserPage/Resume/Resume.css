@@ -1,0 +1,18 @@
+.EditResume-experience, .EditResume-education, .EditResume-skills {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.EditResume-InputGroupText > span{
+  background-color:  #55c57a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Resume-experience::first-line {
+  font-size: 2rem;
+}
+
+.Resume-h4 {
+  color: #79c40d;
+}

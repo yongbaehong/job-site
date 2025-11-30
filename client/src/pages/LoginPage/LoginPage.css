@@ -1,0 +1,19 @@
+.LoginPage-row {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.LoginPage-label {
+  color: #55c57a;
+}
+
+.LoginPage-text {
+  color: lightcoral!important;
+}
+
+.SignupPage-row {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

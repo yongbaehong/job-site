@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --exec npm run restart",
+    "restart": "rimraf dist && npm run build && npm start",
+    "start": "node dist/index.js & npm start --prefix ../client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ybh",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-core": "^6.26.3",
+    "faker": "^5.5.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.10",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2"
+  }
+}

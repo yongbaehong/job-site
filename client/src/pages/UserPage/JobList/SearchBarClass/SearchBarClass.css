@@ -1,0 +1,27 @@
+#SearchBar-background {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  z-index: 500;
+  width: 100vw;
+  background-color: #198754;
+}
+
+.SearchBar {
+  margin: 3px;
+  padding: 5px 0 5px 0;
+  margin-left: 4%;
+  width: 90%!important;
+}
+
+.SearchBar-search span {
+  background-color: #bfe195;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #SearchBar-background {
+    top: 25px;
+  }
+}

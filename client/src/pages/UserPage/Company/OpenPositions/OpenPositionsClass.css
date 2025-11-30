@@ -1,0 +1,19 @@
+.OpenPositionsClass-Card:nth-child(odd) .OpenPositionsClass-CardHeader:first-child {
+  background-color: #90a4ae;
+  color: #000000;
+  margin: 0px 0.3px!important;
+  font-style: italic;
+}
+
+.OpenPositionsClass-Card:nth-child(even) .OpenPositionsClass-CardHeader:first-child {
+  background-color: #bfe195;
+  color: #000000;
+  margin: 0px 0.3px!important;
+}
+
+
+
+.OpenPositionsClass-table caption {
+  caption-side: top;
+}
+

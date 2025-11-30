@@ -1,0 +1,20 @@
+.CustomSideNav-li {
+  transition: all 0.2s;
+  font-variant: small-caps;
+  color: lightslategray;
+}
+
+.CustomSideNav-i {
+  color: seagreen;
+  width: 2em!important;
+}
+
+.CustomSideNav-li:hover {
+  cursor: pointer;
+  background-color:#bfe195;
+  color: white;
+}
+
+.toggle{
+  cursor: pointer;
+}

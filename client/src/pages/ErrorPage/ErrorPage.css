@@ -1,0 +1,21 @@
+.ErrorPage-msg {
+  color: #8bc34a;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  animation-duration: 500ms;
+  animation-name: textShadow;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes textShadow {
+  from {
+    text-shadow: -2px -2px -2px #ffffff;
+    transform: scale(0.1);
+  }
+  to {
+    text-shadow: -25px -25px -5px #ffffff;
+    transform: scale(1);
+  }
+}

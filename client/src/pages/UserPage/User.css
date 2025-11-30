@@ -1,0 +1,25 @@
+.User-CustomJumbotron-Error > div > div{
+  color:peru;
+  font-size: 2rem;
+}
+
+/* MEDIUM DISPLAY only */
+@media (min-width: 481px) and (max-width:813px) {
+  .User-CustomJumbotron-Error > div > div{
+    color:peru;
+    font-size: 3rem;
+  }
+}
+
+/* MAXIMUM DISPLAY only */
+@media (min-width: 814px) {
+  .User-CustomJumbotron-Error > div > div{
+    color:peru;
+    font-size: 4.5rem;
+  }
+}
+
+form {
+  background-color: cornsilk;
+  padding: 10px;
+}
