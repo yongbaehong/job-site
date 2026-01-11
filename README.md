@@ -151,7 +151,7 @@ hong-yong-competency
 ---
 ### Authors and Acknowledgments  
 
-This was coded by Yong Bae Hong at a LastMile classroom at PBSP. Thanks to the LastMile and PBSP staff for all their help and support. 
+This was coded by Yongbae.
 
 
 
