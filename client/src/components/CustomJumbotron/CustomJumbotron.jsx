@@ -12,7 +12,7 @@ const CustomJumbotron = props => {
   }
 
   return (
-      <Row className={`d-flex flex-column justify-content-center align-items-center ${props.customJumbotronCss}`} style={style}>
+      <Row className={`d-flex flex-column justify-content-center align-items-center ${props.customJumbotronCss} g-0`} style={style}>
         <Col sm={12} ><div className="text-center fw-light">{props.text}</div></Col>
         <Col sm={12} className="text-center">
           {props.children} 

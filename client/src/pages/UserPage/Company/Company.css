@@ -1,9 +1,9 @@
 .Company-description::first-line {
   font-size: 2rem;
-  color: seagreen;
+  color: var(--accent-color);
   opacity: 0.9;
 }
 
 .Company-h4 {
-  color: #79c40d;
+  color: var(--accent-hover);
 }

@@ -10,7 +10,7 @@ const MainPage = ({ history }) => {
   return (
     <PageTemplate customClasses="g-0 m-0">
       {/* TITLE Animation */}
-      <Row className="bg-dark h-20">
+      <Row className="bg-dark h-20 g-0">
         <Col
           xs={12}
           className="d-flex flex-column justify-content-center display-3 text-muted mb-3"
