@@ -22,4 +22,5 @@ html, body, .PageTemplate {
   position: relative;
   position: inherit;
   height: 100vh;
+  background-color: #f5f6f2;
 }

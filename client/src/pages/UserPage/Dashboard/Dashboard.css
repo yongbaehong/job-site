@@ -1,7 +1,121 @@
-.Dashboard-h4 {
-  color: #79c40d;
+.dashboard-container {
+  background: #f5f6f2;
+  /* padding: 28px 36px 0 36px; */
 }
 
-.Dashboard-Row2 {
-  /* padding-bottom: 120px; */
+.dashboard-header {
+  padding: 8px 0 16px 0;
+}
+
+.dashboard-welcome {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+  color: #111;
+}
+
+.dashboard-email {
+  color: #2b7a69;
+  font-weight: 600;
+}
+
+.dashboard-section {
+  max-width: 1100px;
+  margin: 0 auto 8px auto;
+}
+
+.dashboard-section-title {
+  font-size: 22px;
+  color: #1f7a5a;
+  margin-bottom: 18px;
+  text-align: left;
+  padding-left: 8px;
+  border-bottom: 1px solid rgba(31,122,90,0.12);
+}
+
+.dashboard-cards-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.dashboard-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(16,24,40,0.06);
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard-card-img {
+  height: 140px;
+  object-fit: cover;
+}
+
+.dashboard-card .card-body {
+  background: #fff;
+  padding: 18px;
+}
+
+.dashboard-card-title {
+  font-size: 18px;
+  color: #0f3b2f;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.dashboard-card-date {
+  text-align: center;
+  color: #6b6b6b;
+}
+
+.dashboard-cta {
+  margin: 12px 16px 18px 16px;
+  border-radius: 22px !important;
+  background: #2b7a69 !important;
+  border: none !important;
+  color: #fff !important;
+  padding: 8px 28px !important;
+  box-shadow: 0 4px 8px rgba(43,122,105,0.12);
+  transition: background-color 0.18s ease, transform 0.12s ease;
+}
+
+.dashboard-cta:hover {
+  background: #246651 !important;
+  transform: translateY(-1px);
+}
+
+.badge-count {
+  display: inline-block;
+  min-width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-size: 16px !important;
+}
+
+/* Employer section tweaks */
+.Dashboard-Row2 h1,
+.Dashboard-Row2 h2 {
+  color: #1f7a5a;
+}
+
+.Dashboard-h4 {
+  color: #1f7a5a;
+}
+
+@media (max-width: 767px) {
+  .dashboard-card-img {
+    height: 120px;
+  }
+  .dashboard-welcome {
+    font-size: 20px;
+  }
 }

@@ -34,55 +34,58 @@ const Dashboard = ({ user, setXcomp }) => {
   const openPositions = () => setXcomp('open_positions')
 
   return (
-    <div className="vh-100 d-flex flex-column justify-content-between">
+    <div className="vh-100 d-flex flex-column justify-content-between dashboard-container">
       <div>
-        <div className="display-6 text-center">Welcome, <span className="text-success">{user.email}</span></div>
-        <Row className="mt-2 gy-3 text-center">
-          <h1 className="text-center text-light bg-success">User Info</h1>
+        <header className="dashboard-header">
+          <div className="dashboard-welcome">Welcome, <span className="dashboard-email">{user.email}</span></div>
+        </header>
+        <div className="dashboard-section">
+          <h2 className="dashboard-section-title">User Info</h2>
+          <Row className="mt-2 gy-3 text-center dashboard-cards-row">
           <Col xs={12} sm={6} md={4} lg={4} className="d-flex justify-content-center">
-            <Card style={{ width: '18rem', cursor: 'pointer' }} onClick={bookmardAndApplied}>
-              <Card.Img variant="top" src="./image/chiara-f-MI8He1NWPWg-unsplash.jpg" alt="holder" />
+            <Card className="dashboard-card" style={{ width: '18rem', cursor: 'pointer' }} onClick={bookmardAndApplied}>
+              <Card.Img className="dashboard-card-img" variant="top" src="./image/chiara-f-MI8He1NWPWg-unsplash.jpg" alt="holder" />
               <Card.Body>
-                <Card.Title>Bookmarked Jobs</Card.Title>
+                <Card.Title className="dashboard-card-title">Bookmarked Jobs</Card.Title>
                 <Card.Text>
-                  <span className="badge bg-danger text-light">{user.bookmarkJob.length}</span>
+                  <span className="badge badge-count bg-danger text-light">{user.bookmarkJob.length}</span>
                 </Card.Text>
               </Card.Body>
               <CustomButton
-                customClasses="Button Button--green"
+                customClasses="Button Button--green dashboard-cta"
                 text="Go"
               />
             </Card>
           </Col>
 
           <Col xs={12} sm={6} md={4} lg={4} className="d-flex justify-content-center">
-            <Card style={{ width: '18rem', cursor: 'pointer' }} onClick={bookmardAndApplied}>
-              <Card.Img variant="top" src="./image/markus-winkler-XKKuY4ottJ0-unsplash.jpg" alt="holder" />
+            <Card className="dashboard-card" style={{ width: '18rem', cursor: 'pointer' }} onClick={bookmardAndApplied}>
+              <Card.Img className="dashboard-card-img" variant="top" src="./image/markus-winkler-XKKuY4ottJ0-unsplash.jpg" alt="holder" />
               <Card.Body>
-                <Card.Title># of Jobs Applied To</Card.Title>
+                <Card.Title className="dashboard-card-title"># of Jobs Applied To</Card.Title>
                 <Card.Text>
-                  <span className="badge bg-danger text-light">{appliedJobs.length}</span>
+                  <span className="badge badge-count bg-danger text-light">{appliedJobs.length}</span>
                 </Card.Text>
               </Card.Body>
               <CustomButton
-                customClasses="Button Button--green"
+                customClasses="Button Button--green dashboard-cta"
                 text="Go"
               />
             </Card>
           </Col>
 
           <Col xs={12} sm={6} md={4} lg={4} className="d-flex justify-content-center">
-            <Card style={{ width: '18rem', cursor: 'pointer' }} onClick={resume}>
-              <Card.Img variant="top" src="./image/markus-winkler-7iSEHWsxPLw-unsplash.jpg" alt="holder" />
+            <Card className="dashboard-card" style={{ width: '18rem', cursor: 'pointer' }} onClick={resume}>
+              <Card.Img className="dashboard-card-img" variant="top" src="./image/markus-winkler-7iSEHWsxPLw-unsplash.jpg" alt="holder" />
               <Card.Body>
-                <Card.Title>Resume Updated On</Card.Title>
-                <Card.Text>
+                <Card.Title className="dashboard-card-title">Resume Updated On</Card.Title>
+                <Card.Text className="dashboard-card-date">
                   {timeYearMonthDay(user.resume.update)}
                 </Card.Text>
               </Card.Body>
               <CustomButton
-                customClasses="Button Button--green"
-                text="edit"
+                customClasses="Button Button--green dashboard-cta"
+                text="EDIT"
               />
             </Card>
           </Col>
@@ -145,6 +148,7 @@ const Dashboard = ({ user, setXcomp }) => {
         }
       </div>
       <Footer />
+    </div>
     </div>
   )
 }
